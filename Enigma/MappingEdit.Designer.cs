@@ -590,12 +590,13 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(159, 287);
+            this.button1.Location = new System.Drawing.Point(145, 287);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 27;
             this.button1.Text = "Salvar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MappingEdit
             // 
@@ -658,7 +659,6 @@
             this.Controls.Add(this.label1);
             this.Name = "MappingEdit";
             this.Text = "MappingEdit";
-            this.Load += new System.EventHandler(this.MappingEdit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

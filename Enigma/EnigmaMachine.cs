@@ -8,7 +8,7 @@ namespace Enigma
 {
     public class EnigmaMachine
     {
-        char[,] mapping;
+        public char[,] mapping;
         char[] abc, refletor, R1, IR1, R2, IR2, R3, IR3;
         int rotations1 = 0, rotations2 = 0, rotations3 = 0;
         public EnigmaMachine()
@@ -76,7 +76,7 @@ namespace Enigma
         private char Map(char c)
         {
             char[] from = mapping.Cast<char>().Skip(26).Take(26).ToArray();
-            int index = FindInArray(from, c);
+            int index = FindInArray(abc, c);
             return mapping[1, index];
         }
 

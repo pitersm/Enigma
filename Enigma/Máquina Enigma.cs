@@ -20,7 +20,7 @@ namespace Enigma
 
         OpenFileDialog ofd = new OpenFileDialog();
         FolderBrowserDialog folderBrowserDialog1 = new FolderBrowserDialog();
-        EnigmaMachine encryption;
+        public EnigmaMachine encryption;
         string inputString, encryptedText;
 
         private void button1_Click(object sender, EventArgs e)
