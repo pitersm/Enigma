@@ -21,8 +21,13 @@ namespace Enigma
         OpenFileDialog ofd = new OpenFileDialog();
         FolderBrowserDialog folderBrowserDialog1 = new FolderBrowserDialog();
         EnigmaMachine encryption;
-        string inputString, outputString, encryptedText, decryptedText, key;
-        int type;
+        string inputString, encryptedText;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MappingEdit newChild = new MappingEdit(this);
+            newChild.Show();
+        }
 
         private void Enigma_Load(object sender, EventArgs e)
         {

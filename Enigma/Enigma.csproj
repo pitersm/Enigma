@@ -46,6 +46,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnigmaMachine.cs" />
+    <Compile Include="MappingEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MappingEdit.Designer.cs">
+      <DependentUpon>MappingEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaquinaEnigma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaquinaEnigma.Designer.cs">
+      <DependentUpon>MaquinaEnigma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Máquina Enigma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MappingEdit.resx">
+      <DependentUpon>MappingEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaquinaEnigma.resx">
+      <DependentUpon>MaquinaEnigma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Máquina Enigma.resx">
       <DependentUpon>Máquina Enigma.cs</DependentUpon>
     </EmbeddedResource>
