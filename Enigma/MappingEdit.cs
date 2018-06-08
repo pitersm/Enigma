@@ -68,6 +68,7 @@ namespace Enigma
                 return;
             }
 
+            MessageBox.Show("Mapeamento Editado Com Sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Hide();
         }
     }
