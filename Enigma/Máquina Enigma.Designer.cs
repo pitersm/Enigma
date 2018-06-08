@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.btnDecrypt = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,22 +52,13 @@
             this.linkLabel1.Text = "Clique aqui para escolher um arquivo de entrada";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // btnDecrypt
-            // 
-            this.btnDecrypt.Location = new System.Drawing.Point(409, 312);
-            this.btnDecrypt.Name = "btnDecrypt";
-            this.btnDecrypt.Size = new System.Drawing.Size(82, 29);
-            this.btnDecrypt.TabIndex = 33;
-            this.btnDecrypt.Text = "Decriptar";
-            this.btnDecrypt.UseVisualStyleBackColor = true;
-            // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(409, 262);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(90, 20);
             this.txtName.TabIndex = 32;
-            this.txtName.Text = "Decrypt";
+            this.txtName.Text = "Output";
             // 
             // label5
             // 
@@ -111,11 +101,11 @@
             // 
             // btnEncrypt
             // 
-            this.btnEncrypt.Location = new System.Drawing.Point(321, 312);
+            this.btnEncrypt.Location = new System.Drawing.Point(343, 298);
             this.btnEncrypt.Name = "btnEncrypt";
             this.btnEncrypt.Size = new System.Drawing.Size(82, 29);
             this.btnEncrypt.TabIndex = 26;
-            this.btnEncrypt.Text = "Criptografar";
+            this.btnEncrypt.Text = "Processar";
             this.btnEncrypt.UseVisualStyleBackColor = true;
             this.btnEncrypt.Click += new System.EventHandler(this.btnEncrypt_Click);
             // 
@@ -142,7 +132,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(338, 4);
+            this.label1.Location = new System.Drawing.Point(312, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 25);
             this.label1.TabIndex = 23;
@@ -154,7 +144,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 552);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.btnDecrypt);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -174,7 +163,6 @@
 
         #endregion
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button btnDecrypt;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

@@ -66,35 +66,6 @@ namespace Enigma
             txtOutput.Text = encryptedText;
         }
 
-        private void btnDecrypt_Click(object sender, EventArgs e)
-        {
-            //if (inputString == "" || inputString == null)
-            //{
-            //    MessageBox.Show("Favor selecionar um arquivo de entrada preenchido primeiro.", "Preencher arquivo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    return;
-            //}
-            //decryptedText = encryption.Decrypt(new String(inputString.Where(Char.IsLetter).ToArray()).ToUpper(), type, key);
-
-            //DialogResult result = folderBrowserDialog1.ShowDialog();
-            //string folderName = "", filePath = "";
-            //if (result == DialogResult.OK)
-            //{
-            //    folderName = folderBrowserDialog1.SelectedPath;
-            //}
-
-            //filePath = folderName + "\\" + txtName.Text.ToString() + ".txt";
-            //try
-            //{
-            //    System.IO.File.WriteAllText(filePath, decryptedText);
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Favor selecionar um arquivo.", "Preencher arquivo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    return;
-            //}
-            //txtOutput.Text = decryptedText;
-        }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             txtInput.Text = "";

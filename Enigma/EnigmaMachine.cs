@@ -38,9 +38,9 @@ namespace Enigma
                 o = RunRotor(o, R2, rotations2);
                 o = RunRotor(o, R1, rotations1);
                 o = Reflect(o);
-                o = RunRotor(o, IR3, rotations3);
-                o = RunRotor(o, IR2, rotations2);
-                o = RunRotor(o, IR1, rotations1);
+                o = RunRotorBack(o, R1, rotations1);
+                o = RunRotorBack(o, R2, rotations2);
+                o = RunRotorBack(o, R3, rotations3);
                 o = Map(o);
                 Rotate();
                 output += o;
@@ -85,6 +85,14 @@ namespace Enigma
             int rotatedIndex = (FindInArray(abc, c) + rotations) % 26; 
             char rotorLetter = rotor[rotatedIndex]; 
             int abcRotorLetterIndex = FindInArray(abc, rotorLetter); 
+            return RotateAbc(rotations)[abcRotorLetterIndex];
+        }
+
+        private char RunRotorBack(char c, char[] rotor, int rotations)
+        {
+            int rotatedIndex = (FindInArray(abc, c) + rotations) % 26;
+            char abcdLetter = abc[rotatedIndex];
+            int abcRotorLetterIndex = FindInArray(rotor, abcdLetter);
             return RotateAbc(rotations)[abcRotorLetterIndex];
         }
 
