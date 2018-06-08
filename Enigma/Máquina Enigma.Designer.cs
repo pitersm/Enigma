@@ -166,6 +166,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Enigma";
             this.Text = "Enigma";
+            this.Load += new System.EventHandler(this.Enigma_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

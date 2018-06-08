@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enigma.cs" />
+    <Compile Include="EnigmaMachine.cs" />
     <Compile Include="Máquina Enigma.cs">
       <SubType>Form</SubType>
     </Compile>
