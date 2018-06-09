@@ -71,5 +71,35 @@ namespace Enigma
             MessageBox.Show("Mapeamento Editado Com Sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Hide();
         }
+
+        private void MappingEdit_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = enigma.encryption.mapping[1, 0].ToString();
+            textBox2.Text = enigma.encryption.mapping[1, 1].ToString();
+            textBox3.Text = enigma.encryption.mapping[1, 2].ToString();
+            textBox4.Text = enigma.encryption.mapping[1, 3].ToString();
+            textBox5.Text = enigma.encryption.mapping[1, 4].ToString();
+            textBox6.Text = enigma.encryption.mapping[1, 5].ToString();
+            textBox7.Text = enigma.encryption.mapping[1, 6].ToString();
+            textBox8.Text = enigma.encryption.mapping[1, 7].ToString();
+            textBox9.Text = enigma.encryption.mapping[1, 8].ToString();
+            textBox10.Text = enigma.encryption.mapping[1, 9].ToString();
+            textBox11.Text = enigma.encryption.mapping[1, 10].ToString();
+            textBox12.Text = enigma.encryption.mapping[1, 11].ToString();
+            textBox13.Text = enigma.encryption.mapping[1, 12].ToString();
+            textBox14.Text = enigma.encryption.mapping[1, 13].ToString();
+            textBox15.Text = enigma.encryption.mapping[1, 14].ToString();
+            textBox16.Text = enigma.encryption.mapping[1, 15].ToString();
+            textBox17.Text = enigma.encryption.mapping[1, 16].ToString();
+            textBox18.Text = enigma.encryption.mapping[1, 17].ToString();
+            textBox19.Text = enigma.encryption.mapping[1, 18].ToString();
+            textBox20.Text = enigma.encryption.mapping[1, 19].ToString();
+            textBox21.Text = enigma.encryption.mapping[1, 20].ToString();
+            textBox22.Text = enigma.encryption.mapping[1, 21].ToString();
+            textBox23.Text = enigma.encryption.mapping[1, 22].ToString();
+            textBox24.Text = enigma.encryption.mapping[1, 23].ToString();
+            textBox25.Text = enigma.encryption.mapping[1, 24].ToString();
+            textBox26.Text = enigma.encryption.mapping[1, 25].ToString();
+        }
     }
 }

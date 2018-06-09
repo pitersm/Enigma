@@ -659,6 +659,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MappingEdit";
             this.Text = "MappingEdit";
+            this.Load += new System.EventHandler(this.MappingEdit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
